@@ -1,0 +1,76 @@
+&__top-section {
+    display: flex;
+    padding: 16px;
+    gap: 30px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid lightgray;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect for summary container */
+    &__header {
+      display: flex;
+      gap: 10px;
+      line-height: 30px;
+      font-size: 20px;
+      border-right: 3px solid lightgray;
+      padding-right: 30px;
+      // display: flex;
+      // gap: 15px;
+      // color: #42a5f5;
+      color: slategray;
+      &.plan-details {
+        font-size: 18px;
+      }
+      // .circular-icon {
+      //     display: flex;
+      //     justify-content: center;
+      //     align-items: center;
+      //     width: 40px;
+      //     height: 40px;
+      //     border-radius: 50%;
+      //     background: #42a5f5;
+      // }
+      // svg {
+      //     // fill: #42a5f5;
+      //     // stroke: #42a5f5;
+      //     stroke: #000;
+      //     width: 20px;
+      //     height: 20px;
+      // }
+    }
+    button {
+      border: 0;
+      color: slategray;
+      // background-color: #2f3848;
+      cursor: pointer;
+      font-size: 20px;
+      // padding: 12px 24px 12px 0;
+      padding: 0;
+      // padding-right: 30px;
+      line-height: 24px;
+      text-align: left;
+      display: block;
+      text-decoration: none;
+      // border-right: 3px solid lightgray;
+      background: transparent;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &__last-item {
+      margin-left: auto;
+      display: flex;
+      gap: 20px;
+      button {
+        border: 0;
+        padding-right: 20px;
+        &.sign-in {
+          border-right: none;
+        }
+      }
+    }
+    .fas {
+      width: 24px;
+      height: 24px;
+    }
+  }
+

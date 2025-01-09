@@ -1,0 +1,124 @@
+.app__left-menu {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    background-color: #2f3848;
+    color: #FFF;
+    padding: 16px 0;
+    position: fixed; // Change to fixed to always be visible
+    top: 0;
+    height: 100vh;
+    overflow-y: auto; // Ensure the sticky portion scrolls correctly
+    
+    button {
+      border: 0;
+      color: #FFF;
+      background-color: #2f3848;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 12px 16px;
+      line-height: 24px;
+      text-align: left;
+      display: block;
+      text-decoration: none;
+
+      &:focus {
+        // background-color: rgba(47, 56, 72, 0.5); // Change opacity on hover and focus
+        background-color: rgb(84, 92, 105);
+        outline: none;
+      }
+
+      &:hover {
+        // background-color: rgba(47, 56, 72, 0.5); // Change opacity on hover and focus
+        background-color: rgb(46, 50, 57);
+      }
+
+      .fas {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    &__heading {
+      font-size: 20px;
+      margin-bottom: 16px;
+      padding: 0 16px;
+    }
+
+    &__top-section {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 60px;
+    }
+
+    &__middle-section {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1; // Ensure the middle section expands
+      margin-bottom: 60px;
+    }
+
+    &__bottom-section {
+      display: flex;
+      flex-direction: column;
+      margin-top: auto;
+      margin-bottom: 24px;
+    }
+
+    &__accordion {
+      display: flex;
+      flex-direction: column;
+
+      &-heading {
+        font-size: 18px;
+        margin-bottom: 8px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+      }
+
+      &__item {
+        display: flex;
+        .plan-name-btn {
+          // padding: 8px;
+          display: flex;
+          align-items: baseline;
+          gap: 6px;
+        }
+        .plan-delete-btn {
+          padding: 12px 12px 12px 0;
+          align-self: flex-start;
+        }
+        .fas {
+          width: 15px !important;
+          height: 15px !important;
+        }
+      }
+
+      &-content {
+        background-color: #fff;
+        padding: 16px;
+      }
+    }
+
+    &__new-plan-btn {
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      background-color: white;
+      border: none;
+      cursor: pointer;
+
+      &__plus-icon {
+        margin-right: 8px;
+      }
+
+      &:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+      }
+    }
+  }
+

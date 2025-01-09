@@ -1,0 +1,17 @@
+.app__main-section {
+    display: flex;
+    flex-direction: column;
+    flex-grow:1;
+    // width: 85%; // Adjust width to ensure it takes 90% of the viewport width
+    // padding: 16px;
+    &.left-menu-open {
+      margin-left: 220px; // Add margin to account for the fixed left menu
+    }
+
+    @import 'main-top-section.scss';
+    @import 'main-results-section.scss';
+
+    .pie-chart {
+      margin-bottom: 24px;
+    }
+  }

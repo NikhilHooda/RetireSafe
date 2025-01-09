@@ -1,0 +1,90 @@
+.app__dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    &__inputs {
+      display: flex;
+      gap: 16px;
+      &__item {
+        display: flex;
+        flex-direction: column;
+        // align-items: end;
+        flex-grow: 1;
+        border: 1px solid lightgray;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 16px;
+        &__btn {
+          padding: 8px;
+          background: none;
+          border: 0;
+          cursor: pointer;
+          color: slategray;
+          font-size: 16px;
+          font-weight: bold;
+          text-align: right;
+          &:hover {
+            text-decoration: underline;
+            color: #1e90ff;
+          }
+          &:focus {
+            outline: none;
+            color: #1e90ff;
+          }
+        }
+      }
+    }
+    &__assumptions {
+      display: flex;
+      gap: 16px;
+      flex-direction: column;
+      border: 1px solid lightgray;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 16px;
+      &__items {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        &__item {
+          display: flex;
+          // gap: 10px;
+          align-items: center;
+          flex-grow: 1;
+        }
+      }
+    }
+    &__plans {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      // gap: 16px;
+      // flex-direction: column;
+      &__plan {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 49%;
+        border: 1px solid lightgray;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 16px;
+        &__item {
+          display:flex;
+          padding-right: 30px;
+          gap: 30px;
+          justify-content: space-between;
+          align-items: center;
+          .plan-details {
+            align-self: flex-start;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            color: slategray;
+            button {
+              padding: 0;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+

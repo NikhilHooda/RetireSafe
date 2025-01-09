@@ -1,0 +1,126 @@
+.plan__charts {
+  border: 1px solid lightgray;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  .chart-tabs {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+    gap: 20px;
+    border-bottom: 1px solid #d7d7d7;
+    background: #f7f7f7;
+
+    button {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      background: #f7f7f7;
+      // border: 1px solid darkgray;
+      border: 0;
+      // border-bottom: 1px solid slategray;
+      padding: 5px 10px;
+      cursor: pointer;
+      color: slategray;
+      font-size: 16px;
+      // transition: all 0.3s;
+      // margin-right: 10px;
+      // flex: 1; /* Make tabs of equal width */
+      // text-align: center; /* Center the text */
+
+      &:hover {
+        border-bottom: 2px solid slategray;
+      }
+
+      &.active {
+        // background: white;
+        font-weight: bold;
+        border-bottom: 2px solid slategray;
+        // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect for active tabs */
+      }
+    }
+  }
+  .charts-content {
+    .child-tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 16px;
+      gap: 20px;
+
+      button {
+        background: #fff;
+        // border: 1px solid darkgray;
+        border: 0;
+        border-bottom: 1px solid slategray;
+        padding: 5px 10px;
+        cursor: pointer;
+        color: slategray;
+        font-size: 16px;
+        // transition: all 0.3s;
+        // margin-right: 10px;
+        // flex: 1; /* Make tabs of equal width */
+        // text-align: center; /* Center the text */
+
+        &:hover {
+          border-bottom: 2px solid slategray;
+        }
+
+        &.active {
+          // background: white;
+          font-weight: bold;
+          border-bottom: 2px solid slategray;
+          // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect for active tabs */
+        }
+      }
+
+      &__content {
+        padding: 16px;
+        .success-rate {
+          &__content {
+            color: "slategray";
+          }
+
+          &__desc {
+            margin: 20px 0;
+          }
+          &__info {
+            margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            &__text {
+              width: 50%;
+              padding-bottom: 16px;
+            }
+          }
+          &__charts {
+            display: flex;
+            justify-content: space-evenly;
+            &__percent-pie-chart {
+              flex-grow: 1;
+            }
+            &__count-pie-chart {
+              flex-grow: 1;
+            }
+          }
+        }
+      }
+    }
+    .data-table {
+      overflow-x: auto;
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+
+        th,
+        td {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+
+        th {
+          background-color: #f2f2f2;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+&__summary {
+  // display:flex;
+  width: 25%;
+  min-width: 25%;
+  border: 1px solid lightgray;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  // background-color: snow;
+  .summary {
+    &__top-section {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 16px;
+      border-bottom: 1px solid lightgray;
+      // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      // background-color: snow;
+      padding: 16px;
+    }
+
+    &__sections {
+      display: flex;
+      flex-direction: column;
+      .summary__section {
+        display: flex;
+        flex-direction: column;
+        // flex-grow: 1;
+        border-bottom: 1px solid lightgray;
+        // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect for summary container */
+        &__cta {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 8px;
+          padding: 16px;
+          border: 0;
+          margin: 0;
+          // margin-bottom: 16px;
+          background-color: white;
+          font-size: 16px;
+          font-weight: 600;
+          cursor: pointer;
+          border-bottom: 1px solid lightgray;
+          &__icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: cadetblue;
+          }
+          &__label {
+            flex-grow: 1;
+            text-align: left;
+          }
+          .chevron {
+            align-self: flex-end;
+            &::before {
+              width: 0.5em;
+              height: 0.5em;
+              border-right: 0.2em solid black;
+              border-top: 0.2em solid black;
+            }
+          }
+        }
+        &__content {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          padding: 16px;
+          .summary__section__info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex: 1;
+            // border-right: 2px solid lightgray;
+            gap: 8px;
+            padding: 8px;
+            // border-bottom: 2px solid lightgray;
+            // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            // background-color: snow;
+            &__value {
+              font-size: 18px;
+              margin: 0;
+              font-weight: bold;
+              color: slategray;
+            }
+          }
+        }
+      }
+    }
+  }
+}

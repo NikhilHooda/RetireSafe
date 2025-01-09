@@ -1,0 +1,26 @@
+.circular-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: cadetblue;
+  
+    &__label {
+      font-size: 16px;
+      margin: 0;
+      margin-bottom: 2px;
+      // color: slategray;
+      font-weight: bold;
+    }
+  
+    &__value {
+      width: 85px;
+      height: 85px;
+      border-radius: 50%;
+      font-size: 18px;
+      // color: cadetblue;
+      font-weight: bold;
+      line-height: 65px;
+      text-align: center;
+      border: 10px solid paleturquoise;
+    }
+  }

@@ -1,0 +1,44 @@
+.plan__inputs {
+  .sections {
+    display: flex;
+    gap: 20px;
+    .section {
+      display: flex;
+      flex-direction: column;
+      // flex-grow: 1;
+      &__cta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 16px;
+        border: 0;
+        margin: 0;
+        // margin-bottom: 16px;
+        background-color: white;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        &__icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          background: cadetblue;
+        }
+      }
+      &__content {
+        padding: 16px;
+      }
+      &.section-open {
+        border: 1px solid lightgray;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect for summary container */
+        .section__cta {
+          border-bottom: 1px solid lightgray;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.app__main-section__plan {
+  display: flex;
+  gap: 16px;
+  // flex-direction: column;
+
+  @import 'plan-main-section.scss';
+  @import 'plan-summary.scss';
+}

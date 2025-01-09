@@ -1,0 +1,22 @@
+&__results-section {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  gap: 16px;
+
+  @import 'dashboard.scss';
+  @import 'plan.scss';
+//   &__top-section {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-bottom: 16px;
+//     flex-direction: column;
+//   }
+//   &__chart {
+//     display: flex;
+//   }
+//   &__bottom-section {
+//     display: flex;
+//     justify-content: space-between;
+//   }
+}

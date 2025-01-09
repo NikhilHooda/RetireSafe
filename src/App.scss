@@ -1,0 +1,104 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.chevron {
+  transition: transform 0.3s ease;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 0.4em;
+    height: 0.4em;
+    border-right: 0.2em solid white;
+    border-top: 0.2em solid white;
+    transform: rotate(135deg);
+    margin-right: 0.5em;
+  }
+
+  &.open::before {
+    margin-left: 0.5em;
+    transform: rotate(-45deg);
+  }
+}
+
+/* ...existing code... */
+.app {
+  display: flex;
+  // height: 100vh;
+  // overflow: auto; // Enable scrolling on the main container
+
+  @import './styles/left-menu.scss';
+  @import './styles/main-section.scss';
+
+}
+
+@import './styles/modal.scss';
+@import './styles/form.scss';
+@import './styles/circular-info.scss';
+
+
+
+// .inputs {
+//   width: 25%;
+//   padding: 16px;
+//   margin-right: 16px;
+//   border: 1px solid lightgray;
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect for input container */
+// }
+
+// .charts {
+//   width: 75%;
+// }
+
+// .accordion-section {
+//   border: 1px solid #ccc;
+//   margin-bottom: 8px;
+//   border-radius: 4px;
+//   overflow: hidden;
+// }
+
+// .chart-container {
+//   border: 1px solid lightgray;
+//   padding: 16px;
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect for chart container */
+//   border-radius: 8px;
+//   background: white;
+// }
+
+.green-text {
+  color: green;
+
+  .summary-info-value {
+    color: green;
+  }
+}
+
+.red-text {
+  color: red;
+
+  .summary-info-value {
+    color: red;
+  }
+}
+
+.highcharts-container {
+  z-index: 1 !important; // Lowered z-index with important flag
+}

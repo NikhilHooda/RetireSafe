@@ -1,0 +1,67 @@
+.signin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 20px;
+  }
+
+  &__label {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  &__input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    &.error-border {
+      border-color: red;
+    }
+  }
+
+  .error-msg {
+    color: red;
+    font-size: 14px;
+  }
+
+  &__button {
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+    &--primary {
+      background-color: #007bff;
+      color: white;
+
+      &:hover,
+      &:focus {
+        background-color: #0056b3;
+        outline: none;
+      }
+    }
+
+    &--secondary,
+    &--link {
+      background-color: transparent;
+      color: #007bff;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+        outline: none;
+      }
+    }
+  }
+}
