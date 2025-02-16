@@ -1,7 +1,7 @@
 # Retirement Planning App
 
 ## Overview
-The Retirement Planning App is a React and TypeScript application designed to help couples plan their retirement. It allows users to input personal information, current investments, future investments, and desired retirement income. The app provides visualizations and summaries to assist in making informed retirement decisions.
+The Retirement Planning App is a MERN Stack application designed to help couples plan their retirement. It allows users to input personal information, current investments, future investments, and desired retirement income. The app provides visualizations and summaries to assist in making informed retirement decisions.
 
 ## Features
 - User input forms for personal information, current and future investments, and retirement income.
